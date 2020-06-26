@@ -9,9 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const pages = [
-	'index',
-	'tech',
-	'sitemap'
+	'index'
 ].map(item => new HtmlWebpackPlugin({
 	filename: `${item}.html`,
 	template: `src/views/${item}.pug`
