@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta property="og:image" content="images/logo.svg">
+		<title>Tech | index.html</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="tech"><link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"><link rel="shortcut icon" href="favicon/favicon.ico"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="tech"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="favicon/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="favicon/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="favicon/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="favicon/apple-touch-startup-image-1536x2008.png"><link href="styles.css" rel="stylesheet"></head>
+	<body>
+		<div class="header-block">
+			<header>
+				<div class="container">
+					<div class="header"><img class="header__logo" src="images/logo.svg" alt="">
+						<nav class="nav"><a class="nav__link" href="#">Марафоны</a><a class="nav__link" href="#">Расписание марафонов</a><a class="nav__link" href="#">Результаты</a><a class="nav__link" href="#">Клуб «Очумелые ручки»</a></nav>
+						<div class="header__auth"><a class="fake" href="#">Вход</a>
+							<div class="header__divide">|</div><a class="fake" href="#">Регистрация</a>
+						</div>
+						<div class="mobile-menu-bar d-flex d-xl-none"><a class="menu-bar js-menu-bar" href="javascript:void(0);"><span class="menu-bar__stick"></span><span class="menu-bar__stick"></span><span class="menu-bar__stick"></span></a>
+						</div>
+					</div>
+					<!--.row
+					.col-auto.col-xl-3
+						.d-flex.align-items-center.h-100
+							a.logo(href="/")
+								img.logo__img(src="images/logo.svg" alt="")
+								img.logo__img.logo__img_small(src="images/logo-small.svg" alt="")
+					.col-auto.ml-auto.col-xl-9
+						.header__container.d-flex.align-items-center.h-100.justify-content-between
+							.nav-menu-container.js-mobile-menu
+								nav.nav-menu
+									.nav-menu__link.nav-menu__link_mega.js-mega-menu(data-mega-menu-id="megamenu")
+										.btn.btn-base.btn-icon Каталог
+									a.nav-menu__link(href="#") Услуги
+									a.nav-menu__link(href="#") О компании
+									a.nav-menu__link(href="#") Доставка
+									a.nav-menu__link(href="#") Контакты
+					
+							.d-flex.h-100.align-items-center
+								a.nav-menu__search(href="#")
+									.icon-search
+					
+								.basket
+									.basket__icon
+										.icon-basket
+										.basket__num 15
+					
+									.basket__text
+										.basket__title Корзина
+										.basket__price 25 436 ₽
+					
+									a.stretched-link(href="#")
+					
+								div
+									.mobile-menu-bar.align-items-center.d-flex.d-xl-none
+										+menu-bar
+					
+						.mobile-menu
+							nav.nav-menu.d-flex.d-xl-none
+								a.nav-menu__link(href="#") Услуги
+								a.nav-menu__link(href="#") О компании
+								a.nav-menu__link(href="#") Доставка
+								a.nav-menu__link(href="#") Контакты
+					-->
+				</div>
+			</header>
+			<main class="main">
+<section class="section">
+	<div class="container"></div>
+</section>
+			</main>
+		</div>
+<footer class="footer">
+	<div class="container"></div>
+</footer>
+	<script type="text/javascript" src="js/template.js"></script></body>
+</html>

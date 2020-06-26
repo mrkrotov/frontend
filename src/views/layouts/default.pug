@@ -1,0 +1,50 @@
+doctype html
+
+block vars
+
+include ../components/_mixins
+
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0")
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(property="og:image" content="images/logo.png")
+
+		title= `Tech | ${page.title}`
+
+	body
+		.header-block
+			block header
+				include ../partials/_header
+
+			section.section
+				.container
+					.main-block
+						.mb-3.mb-xl-80
+							.main-block__subtitle Старт марафона 20 января 2020
+							h1.main-block__h1 Базовый марафон
+						.mb-3.mb-xl-80
+							.hr
+							.fz-18.mb-1 За 3 недели с Melannett
+							h2.my-0 Здоровая спина и подтянутая кожа
+						.mb-3.mb-xl-0
+							.hr
+							.fz-18.mb-1 Лучшим участникам
+							h2.my-0 Денежные призы
+						.btn-custom
+							.position-relative
+								.btn-custom__price Цена марафона: 3 000 Рублей
+								.btn-custom__action Хочу участвовать!
+								a.stretched-link(href="#")
+
+		main.main
+			block main
+
+		block footer
+			include ../partials/_footer
+
+		block modals
+
+		block scripts

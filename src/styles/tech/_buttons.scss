@@ -1,0 +1,99 @@
+.btn {
+	white-space: normal;
+	font-weight: bold;
+
+	&:focus {
+		box-shadow: none;
+	}
+
+	//[class^="icon-"], [class*=" icon-"] {
+	//	font-size: 1.2em;
+	//	vertical-align: -3px;
+	//}
+
+	&-base {
+		background: #E9588F;
+		padding: .25rem 0.7rem;
+		color: $white;
+
+		&:not(:disabled):hover {
+			background: $link-hover-color;
+			color: $white;
+
+			&:active {
+				background: #0073D3;
+			}
+		}
+
+		&:disabled,
+		&.disabled {
+			background: #EAE6E0;
+			color: $secondary;
+		}
+	}
+
+	&-large {
+		padding: 20px 50px;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 18px;
+		border-radius: 64px;
+		background: #E9588F;
+		color: #fff;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&-small {
+		padding: 0 1rem;
+		font-size: 13px;
+	}
+
+	&-ghost {
+		border: 1px solid $primary;
+		padding: .25rem 1.5rem;
+		color: $primary;
+
+		&:not(:disabled):hover {
+			border-color: $link-hover-color;
+			color: $link-hover-color;
+
+			&:active {
+				border-color: #0073D3;
+				color: #0073D3;
+			}
+		}
+
+		&:disabled,
+		&.disabled {
+			border-color: #EAE6E0;
+			color: #EAE6E0;
+		}
+
+		&.btn-large {
+			padding: .5rem 1.5rem;
+		}
+
+		&.btn-small {
+			padding: 0 1rem;
+		}
+	}
+
+	&-icon {
+		padding-left: 35px;
+		position: relative;
+		
+		&::before {
+			@include icon-font;
+			content: $icon-line;
+			font-size: 12px;
+			color: #fff;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

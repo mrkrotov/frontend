@@ -1,0 +1,37 @@
+footer.footer
+	.footer__top
+		.container
+			.row
+				.col-xl-10.offset-xl-1
+					.footer__text Все материалы на сайте www.melannett.ru представлены для ознакомления, мы не несем ответственности за возможный ущерб от действий пользователей. Вам обязательно необходимо консультироваться с врачом, прежде, чем заниматься лечением.
+	.footer__link-block
+		.container
+			.footer__link-container
+				a.footer__link(href="#") Марафоны
+				a.footer__link(href="#") Результаты марафонов
+				a.footer__link(href="#") Как проходят марафоны
+				a.footer__link(href="#") Оплата
+				a.footer__link(href="#") Статьи
+
+	.footer__contact
+		.container
+			.footer__bottom
+				a.mb-3.mb-lg-0(href="#")
+					img.mw-100(src="images/logo-footer.png" alt="")
+				.footer__info
+					div ИП Мельникова А.И.
+					div г. Москва, ул. Складочная, д.1, стр. 7, офис 260
+					div ИНН 771708551917 | ОГРН 316774600493152
+				.footer__right-block
+					.footer__social
+						- for (var i = 0; i < 8; i++)
+							a.footer__social-link(href="#")
+								img(src=`images/icon/${i}.svg` alt="")
+
+					a.mb-20.d-block(href="#") marafon@melannett.ru
+					div Техподдержка С 8:00 до 21:00 по Москве
+
+	.footer__copyright Copyright © 2018
+
+
+
